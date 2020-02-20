@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>myCASA</title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="initial-scale=1">
+      <link rel="stylesheet" href="../mycasa-src-3.0/css/designsystem.min.css">
+      <link rel="stylesheet" href="../mycasa-src-3.0/css/casa.css">
+      <script type="text/javascript" src="../mycasa-src-3.0/js/designsystem.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.js"></script>
+	  <script type="text/javascript" src="va.js"></script>
+      <script type="text/javascript">
+         /* page specific js */
+
+
+      </script>
+   </head>
+   <body class="live-demo au-body au-grid">
+      <main class="au-grid">
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="logo au-body au-body--dark">
+                     <a href="index.html"><img src="../mycasa-src/img/CASALOGO-white-i.svg"></a>
+                  </div>
+                  <div class="casa-menu">
+
+                  	<div id="dropdown-menu">
+						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/menu.png" height="20" />Menu</a></div>
+						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/close.png" height="20" />Close</a><br />
+						<br />
+						<p id="mycasa-home"><a href="#">myCASA home</a></p>
+						<p><a href="#">Switch profile</a></p>
+						<p><a href="mycasa-signed-out.html">Sign out</a></p>
+						</div>
+
+
+                  </div>
+               </div></div>
+            </div>
+         </div>
+         <div class="body">
+			<div class="banner">
+				<div class=container>
+					<div class="row">
+					 <div class="col-md-12">
+				This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+				</div>
+				</div>
+			</div>
+		</div>
+         <div class="container">
+               <nav class="au-breadcrumbs" aria-label="breadcrumb">
+                  <ul class="au-link-list au-link-list--inline">
+                     <li><a href="#">myCASA</a></li>
+                     <li>Flight crew licence application</li>
+                  </ul>
+               </nav>
+			 <div class="casa-section">
+               <header class="au-header" role="banner">
+                  <h1 class="break desktop au-header-heading">Flight crew licence application </h1>
+                  <a class="au-direction-link" href="javascript:history.back()">
+					<span class="au-direction-link__arrow au-direction-link__arrow--left" aria-hidden="true"></span>Back
+					</a>
+               </header>
+			 </div>
+
+<div class="row">
+               	<div class="col-xs-12 col-md-12 col-lg-6">
+
+                <h3>Security check requirements</h3>
+
+                <p>To continue your application, please choose an option below:</p>
+
+                <div class="au-form-group">
+
+                <div class="au-control-input">
+                    <input class="au-control-input__input" type="radio" name="radio-ex" id="radio-phone">
+                    <label class="au-control-input__text" for="radio-phone"><p class="au-label">I have applied for an aviation security identification card (<abbr title="Aviation security identification card">ASIC</abbr>) but have not yet received it</p>
+                    <p>Once you have received your ASIC, you will need to send a certified copy of your ASIC to CASA to complete your application.</p></label>
+                </div>
+              </div>
+
+              <div class="au-form-group">
+                <div class="au-control-input">
+                    <input class="au-control-input__input" type="radio" name="radio-ex" id="radio-phone2">
+                    <label class="au-control-input__text" for="radio-phone2"><p class="au-label">I hold or I have applied for an aviation Identification (<abbr title="Aviation Identification">AVID</abbr>)</p>
+                    <p>You will need to send a certified copy of your AVID to CASA to complete your application.</p></label>
+                </div>
+              </div>
+
+              <div class="au-form-group">
+                <div class="au-control-input">
+                    <input class="au-control-input__input" type="radio" name="radio-ex" id="radio-phone3">
+                    <label class="au-control-input__text" for="radio-phone3"><p class="au-label">I am under 18</p>
+                    <p>You can continue your application, but you will need to get an ASIC or AVID three months after turning 18 to continue to exercise the privileges of your licence.</p></label>
+                </div>
+              </div>
+
+
+
+
+   				<div class="au-form-group">
+
+   				<a class="au-btn" href="photo-consent.html">Next</a>
+
+
+
+
+
+				</div>
+
+            </div>
+			 </div>
+			 </div>
+		  </div>
+
+
+          <div class="footer">
+
+            <div class="footer-wrapper">
+               <iframe src="../mycasa-src/footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+            </div>
+         </div>
+      </main>
+	   		  <script>
+		  $("input[name=radio-ex]").on("change", function () {
+        if ($(this).val() === "yes") {
+            $(".q-1").removeClass("casa-hidden");
+        } else if ($(this).val() === "no") {
+            $(".q-1").addClass("casa-hidden");
+        }
+    });
+
+
+			$("input[name=radio-ex2]").on("change", function () {
+        if ($(this).val() === "yes") {
+            $(".q-2").removeClass("casa-hidden");
+        } else if ($(this).val() === "no") {
+            $(".q-2").addClass("casa-hidden");
+        }
+    });
+
+			$("input[name=radio-ex3]").on("change", function () {
+        if ($(this).val() === "yes") {
+            $(".q-3").removeClass("casa-hidden");
+        } else if ($(this).val() === "no") {
+            $(".q-3").addClass("casa-hidden");
+        }
+    });
+
+			$("input[name=radio-ex4]").on("change", function () {
+        if ($(this).val() === "yes") {
+            $(".q-4").removeClass("casa-hidden");
+        } else if ($(this).val() === "no") {
+            $(".q-4").addClass("casa-hidden");
+        }
+    });
+		  </script>
+   </body>
+</html>

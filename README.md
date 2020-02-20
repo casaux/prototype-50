@@ -1,1 +1,1 @@
-# mycasa-3.0-template
+# licence-application-v2

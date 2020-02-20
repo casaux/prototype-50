@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>myCASA</title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="viewport" content="initial-scale=1">
+      <link rel="stylesheet" href="../mycasa-src-3.0/css/designsystem.min.css">
+      <link rel="stylesheet" href="../mycasa-src-3.0/css/casa.css">
+      <script type="text/javascript" src="../mycasa-src-3.0/js/designsystem.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.min.js"></script>
+      <script type="text/javascript" src="../mycasa-src-3.0/js/jquery.js"></script>
+	  <script type="text/javascript" src="va.js"></script>
+      <script type="text/javascript">
+         /* page specific js */
+
+
+
+      </script>
+      <style type="text/css">
+      </style>
+   </head>
+   <body class="live-demo au-body au-grid">
+      <main class="au-grid">
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="logo au-body au-body--dark">
+                     <a href="index.html"><img src="../mycasa-src/img/CASALOGO-white-i.svg"></a>
+                  </div>
+                  <div class="casa-menu">
+
+                  	<div id="dropdown-menu">
+						<div id="dd-menu"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/menu.png" height="20" />Menu</a></div>
+						<div id="dd-close"><a class="au-btn au-btn--dark menu" href="#"><img src="../mycasa-src/img/close.png" height="20" />Close</a><br />
+						<br />
+						<p id="mycasa-home"><a href="#">myCASA home</a></p>
+						<p><a href="#">Switch profile</a></p>
+						<p><a href="mycasa-signed-out.html">Sign out</a></p>
+						</div>
+
+
+                  </div>
+               </div></div>
+            </div>
+         </div>
+         <div class="body">
+			<div class="banner">
+				<div class=container>
+					<div class="row">
+					 <div class="col-md-12">
+				This service is currently in beta, we encourage you to <a href="feedback.html">provide feedback</a>
+				</div>
+				</div>
+			</div>
+		</div>
+         <div class="container">
+               <nav class="au-breadcrumbs" aria-label="breadcrumb">
+                  <ul class="au-link-list au-link-list--inline">
+                     <li><a href="#">myCASA</a></li>
+                     <li>Flight crew licence application</li>
+                  </ul>
+               </nav>
+			 <div class="casa-section">
+               <header class="au-header" role="banner">
+                  <h1 class="break desktop au-header-heading">Flight crew licence application </h1>
+                  <a class="au-direction-link" href="javascript:history.back()">
+					<span class="au-direction-link__arrow au-direction-link__arrow--left" aria-hidden="true"></span>Back
+					</a>
+               </header>
+			 </div>
+
+<div class="row">
+               	<div class="col-xs-12 col-md-12 col-lg-12">
+
+                <h3>Confirm flight crew licence application details</h3>
+
+                <p>Please review the details of your flight crew licence application below. Please <a href="#">contact CASA</a> if any of these details are not correct.</p>
+
+                <br /><br />
+
+                <div class="au-table__wrapper">
+                    <table class="au-table au-table--striped">
+                        <caption class="au-table__caption">Licence details</caption>
+                        <thead class="au-table__head">
+                            <tr class="au-table__row">
+                                <th scope="col" class="au-table__header au-table__header--width-25">Licence</th>
+                                <th scope="col" class="au-table__header au-table__header--width-25">Class rating</th>
+                                <th scope="col" class="au-table__header au-table__header--width-25">Type rating</th>
+                                <th scope="col" class="au-table__header au-table__header--width-25">Design feature endorsements</th>
+                            </tr>
+                        </thead>
+                        <tbody class="au-table__body">
+                            <tr class="au-table__row">
+                                <td class="au-table__cell">PPL-A</td>
+                                <td class="au-table__cell">Single engine class rating</td>
+                                <td class="au-table__cell">N/A</td>
+                                <td class="au-table__cell">Tailwheel undercarriage</td>
+                            </tr>
+                            <tr class="au-table__row">
+                                <td class="au-table__cell"></td>
+                                <td class="au-table__cell"></td>
+                                <td class="au-table__cell"></td>
+                                <td class="au-table__cell">Retractable undercarriage</td>
+                            </tr>
+                            <tr class="au-table__row">
+                                <td class="au-table__cell"></td>
+                                <td class="au-table__cell"></td>
+                                <td class="au-table__cell"></td>
+                                <td class="au-table__cell">Manual propeller pitch control</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+   				<div class="au-form-group">
+
+   				<a class="au-btn" href="asic-check2.html">Next</a>
+
+
+
+
+
+				</div>
+
+            </div>
+			 </div>
+			 </div>
+		  </div>
+
+
+          <div class="footer">
+
+            <div class="footer-wrapper">
+               <iframe src="../mycasa-src/footer.html" frameborder="0" border="0" scrolling="no"></iframe>
+            </div>
+         </div>
+      </main>
+	   		  <script>
+		  $("input[name=radio-ex]").on("change", function () {
+        if ($(this).val() === "yes") {
+            $(".q-1").removeClass("casa-hidden");
+        } else if ($(this).val() === "no") {
+            $(".q-1").addClass("casa-hidden");
+        }
+    });
+
+
+			$("input[name=radio-ex2]").on("change", function () {
+        if ($(this).val() === "yes") {
+            $(".q-2").removeClass("casa-hidden");
+        } else if ($(this).val() === "no") {
+            $(".q-2").addClass("casa-hidden");
+        }
+    });
+
+			$("input[name=radio-ex3]").on("change", function () {
+        if ($(this).val() === "yes") {
+            $(".q-3").removeClass("casa-hidden");
+        } else if ($(this).val() === "no") {
+            $(".q-3").addClass("casa-hidden");
+        }
+    });
+
+			$("input[name=radio-ex4]").on("change", function () {
+        if ($(this).val() === "yes") {
+            $(".q-4").removeClass("casa-hidden");
+        } else if ($(this).val() === "no") {
+            $(".q-4").addClass("casa-hidden");
+        }
+    });
+		  </script>
+   </body>
+</html>
